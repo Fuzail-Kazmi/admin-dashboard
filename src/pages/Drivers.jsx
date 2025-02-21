@@ -41,10 +41,8 @@ const Drivers = () => {
 
 
       <div className="bg-[#121212] py-4 rounded-lg border border-gray-700">
-        {/* Container for all fields */}
         <div className="divide-y divide-gray-700 space-y-2">
 
-          {/* Row - First Name */}
           <div className="flex items-center pb-4 px-5">
             <label className="w-1/4 text-gray-300 text-sm font-semibold">
               First name <span className="text-red-500">*</span>
@@ -56,7 +54,6 @@ const Drivers = () => {
             />
           </div>
 
-          {/* Row - Last Name */}
           <div className="flex items-center pb-4 px-5">
             <label className="w-1/4 text-gray-300 text-sm font-medium">
               Last name <span className="text-red-500">*</span>
@@ -68,7 +65,6 @@ const Drivers = () => {
             />
           </div>
 
-          {/* Row - Resume Upload */}
           <div className="flex items-center pb-4 px-5">
             <label className="w-1/4 text-gray-300 text-sm font-medium">
               Resume
@@ -82,7 +78,6 @@ const Drivers = () => {
             </div>
           </div>
 
-          {/* Row - Picture Upload */}
           <div className="flex items-center pb-4 px-5">
             <label className="w-1/4 text-gray-300 text-sm font-medium">
               Picture
@@ -96,7 +91,6 @@ const Drivers = () => {
             </div>
           </div>
 
-          {/* Row - Code */}
           <div className="flex items-center pb-4 px-5">
             <label className="w-1/4 text-gray-300 text-sm font-medium">
               Code <span className="text-red-500">*</span>
@@ -108,7 +102,6 @@ const Drivers = () => {
             />
           </div>
 
-          {/* Row - Color Picker */}
           <div className="flex items-center px-5 py-4">
             <label className="w-1/4 text-gray-300 text-sm font-medium">
               Color
@@ -118,7 +111,6 @@ const Drivers = () => {
             </div>
           </div>
 
-          {/* Row - Link */}
           <div className="flex items-center pt-4 px-5">
             <label className="w-1/4 text-gray-300 text-sm font-medium">
               Link
@@ -132,7 +124,6 @@ const Drivers = () => {
       </div>
 
       <div className="flex justify-between items-center mt-6 border-t border-gray-700 pt-4">
-        {/* Left Buttons */}
         <div className="flex space-x-3">
           <button className="bg-transparent border border-gray-500 text-gray-300 px-4 py-[.65rem] rounded-md text-sm font-semibold">
             Close
@@ -142,7 +133,6 @@ const Drivers = () => {
           </button>
         </div>
 
-        {/* Right Buttons */}
         <div className="flex space-x-3">
           <button className="bg-transparent border border-gray-500 text-gray-300 px-4 py-2 rounded-md text-sm font-semibold">
             Save and add another
