@@ -35,23 +35,6 @@ const getCodeTag = (code) => (
 );
 
 const Dashboard = () => {
-    const [selectedDrivers, setSelectedDrivers] = useState([]);
-    const [selectAll, setSelectAll] = useState(false);
-
-    const handleCheckboxChange = (code) => {
-        setSelectedDrivers((prev) =>
-            prev.includes(code) ? prev.filter((c) => c !== code) : [...prev, code]
-        );
-    };
-
-    const handleSelectAll = () => {
-        if (selectAll) {
-            setSelectedDrivers([]);
-        } else {
-            setSelectedDrivers(driversData.map((driver) => driver.code));
-        }
-        setSelectAll(!selectAll);
-    };
 
     return (
         <div className="p-6 bg-[#161b22] min-h-screen text-gray-200">
@@ -91,8 +74,6 @@ const Dashboard = () => {
                             <th className="py-3 px-4 text-xs font-medium text-gray-500">
                                 <input
                                     type="checkbox"
-                                    checked={selectAll}
-                                    onChange={handleSelectAll}
                                     className="appearance-none w-4 h-4 border border-gray-500 rounded bg-gray-800 checked:bg-blue-500 checked:border-transparent"
                                 />
                             </th>
@@ -110,8 +91,6 @@ const Dashboard = () => {
                                 <td className="py-3 px-4">
                                     <input
                                         type="checkbox"
-                                        checked={selectedDrivers.includes(driver.code)}
-                                        onChange={() => handleCheckboxChange(driver.code)}
                                         className="appearance-none w-4 h-4 border border-gray-500 rounded bg-gray-800 checked:bg-blue-500 checked:border-transparent"
                                     />
                                 </td>
