@@ -47,8 +47,8 @@ const Navbar = () => {
                     {[
                         { path: "/dashboard", icon: HiOutlineQrcode, label: "Dashboard" },
                         { path: "/drivers", icon: LuUsers, label: "Drivers" },
-                        { path: "/", icon: LuCircle, label: "Circuits" },
-                        { path: "/", icon: LuStar, label: "Standings" },
+                        { path: "/circuits", icon: LuCircle, label: "Circuits" },
+                        { path: "/standings", icon: LuStar, label: "Standings" },
                     ].map(({ path, icon: Icon, label }) => (
                         <li key={path}>
                             <Link
